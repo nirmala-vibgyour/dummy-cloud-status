@@ -30,7 +30,7 @@ headers = {
     "Cookie": f"sessionid={sessionid}; csrftoken={csrftoken}"
 }
 
-# Request cloud status
+# Get request cloud status
 try:
     response = requests.get(url, headers=headers, verify=False)
     response.raise_for_status()
