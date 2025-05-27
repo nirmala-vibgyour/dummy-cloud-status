@@ -36,7 +36,7 @@ try:
     response.raise_for_status()
     data = response.json()
 
-    # Simple, humble output
+    # Output
     print(f"Cloud status: {data.get('state')}")
     if 'reason' in data:
         print(f"Reason: {data['reason']}")
